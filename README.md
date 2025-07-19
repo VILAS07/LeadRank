@@ -1,75 +1,52 @@
-# LeadRank - Smart Lead Scoring & Email Verifier
+# LeadRank - Smart Lead Scoring System
 
-LeadRank is a Python application designed to read a CSV file of leads, verify email addresses, and score each lead based on defined criteria. The application aims to help users identify high-quality leads for their business.
+## Overview
+LeadRank is a powerful lead scoring and email verification system built with Python and Streamlit. It helps sales teams prioritize leads by scoring them based on multiple criteria and provides insightful analytics.
 
 ## Features
-
-- Validates email addresses using regex or an API.
-- Scores leads based on various criteria, including job title relevance and email domain checks.
-- Outputs a new CSV file with additional columns for Email Status and Lead Score.
-- Optional Streamlit interface for easy file uploads and result previews.
-
-## Project Structure
-
-```
-leadrank
-├── src
-│   ├── __init__.py
-│   ├── main.py
-│   ├── email_validator.py
-│   ├── lead_scorer.py
-│   ├── utils
-│   │   ├── __init__.py
-│   │   └── helpers.py
-│   └── ui
-│       ├── __init__.py
-│       └── streamlit_app.py
-├── tests
-│   ├── __init__.py
-│   ├── test_email_validator.py
-│   └── test_lead_scorer.py
-├── data
-│   └── sample_leads.csv
-├── requirements.txt
-├── .gitignore
-└── README.md
-```
+- 📊 Smart lead scoring based on multiple criteria
+- ✉️ Email validation and domain analysis
+- 👔 Job title categorization
+- 📈 Interactive dashboards and insights
+- 🔍 Advanced filtering capabilities
+- 📤 Multiple export options
 
 ## Installation
-
 1. Clone the repository:
-   ```
-   git clone <repository-url>
-   cd leadrank
-   ```
+```bash
+git clone https://github.com/VILAS07/LeadRank.git
+cd LeadRank
+```
 
-2. Install the required dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
+2. Create a virtual environment and activate it:
+```bash
+python -m venv venv
+.\venv\Scripts\activate
+```
+
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
 ## Usage
-
-1. Prepare your leads in a CSV file with the following columns: `name`, `email`, `title`, `company`, `LinkedIn`.
-2. Run the application:
-   ```
-   python src/main.py <path-to-your-leads.csv>
-   ```
-3. The output will be a new CSV file with the additional columns `Email_Status` and `Lead_Score`.
-
-## Optional: Streamlit Interface
-
-To use the Streamlit interface, run:
-```
-streamlit run src/ui/streamlit_app.py
+1. Start the Streamlit app:
+```bash
+streamlit run src/app.py
 ```
 
-This will allow you to upload your CSV file, preview the results, and download the scored leads.
+2. Upload your CSV file containing leads data with columns:
+   - name
+   - email
+   - title
+   - company
+   - linkedin
 
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+3. Use the interactive dashboard to:
+   - Score leads
+   - Filter and segment data
+   - Analyze insights
+   - Export results
 
 ## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
+MIT License
