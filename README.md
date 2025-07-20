@@ -1,76 +1,107 @@
-# LeadRank - Smart Lead Scoring System 🚀
+# 📊 LeadRank - Smart Lead Scoring System
 
-**LeadRank** is a powerful lead scoring and email verification system built with **Python** and **Streamlit**. It helps sales teams prioritize leads by scoring them based on multiple criteria and provides insightful analytics to enhance decision-making. 🎯
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.24.0-FF4B4B.svg)](https://streamlit.io)
 
----
+## 🎯 Overview
+LeadRank is an intelligent lead scoring and analytics platform that helps sales teams prioritize their most promising leads. Using advanced algorithms and customizable criteria, it automatically scores and segments leads based on multiple factors including email validity, job seniority, and domain quality.
 
-## 🚀 Features
-- 📊 **Smart lead scoring** based on multiple criteria (job title, company, email domain, etc.)
-- ✉️ **Email validation** and **domain analysis** to ensure data quality
-- 👔 **Job title categorization** to better segment leads
-- 📈 **Interactive dashboards** and **insights** for data-driven decisions
-- 🔍 **Advanced filtering capabilities** for lead segmentation
-- 📤 **Multiple export options** to save and share results
+## ✨ Key Features
+- **Smart Lead Scoring**
+  - Automated scoring based on multiple weighted criteria
+  - Customizable scoring parameters
+  - Real-time score calculation
 
----
+- **Advanced Analytics**
+  - Interactive dashboards with key metrics
+  - Lead quality indicators
+  - Visual insights with charts and graphs
+  - Word cloud analysis of job titles
 
-## 🛠️ Installation
+- **Intelligent Filtering**
+  - Score-based filtering
+  - Job level categorization (CXO, VP, Director, etc.)
+  - Email domain type analysis
+  - Custom filter combinations
 
-### 1. Clone the Repository
-```bash
+- **Data Validation**
+  - Email format verification
+  - Domain analysis
+  - LinkedIn URL validation
+  - Company domain matching
+
+- **Export Options**
+  - CSV export
+  - Excel export
+  - Filtered results download
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Python 3.9 or higher
+- Git
+
+### Installation
+1. Clone the repository:
+```powershell
 git clone https://github.com/VILAS07/LeadRank.git
 cd LeadRank
-2. Set up a Virtual Environment
-For Windows:
+```
 
-bash
-Copy code
+2. Create and activate virtual environment:
+```powershell
 python -m venv venv
 .\venv\Scripts\activate
-For Mac/Linux:
+```
 
-bash
-Copy code
-python3 -m venv venv
-source venv/bin/activate
-3. Install Dependencies
-bash
-Copy code
+3. Install dependencies:
+```powershell
 pip install -r requirements.txt
-⚡ Usage
-1. Run the Streamlit Application
-bash
-Copy code
+```
+
+### Running the App
+```powershell
 streamlit run src/app.py
-This will launch the Streamlit app in your browser where you can interact with the system.
+```
 
-2. Upload Your CSV File
-Upload a CSV file containing your leads data. The required columns are:
+## 📖 Usage Guide
 
-name – Lead's full name
-email – Lead's email address
-title – Lead's job title
-company – Lead's company name
-linkedin – LinkedIn profile URL (optional but recommended)
-3. Interact with the Dashboard
-Once uploaded, you can:
+### 1. Data Preparation
+Prepare your CSV file with these columns:
+- `email`: Email address
+- `title`: Job title
+- `company`: Company name
+- `linkedin`: LinkedIn profile URL
 
-🏅 Score leads based on various parameters.
-🔎 Filter and segment your leads by job title, company, or other attributes.
-📊 Analyze insights through interactive charts and graphs.
-📤 Export the results to CSV or other formats for further use.
-📝 License
-This project is licensed under the MIT License. See LICENSE for more details.
+### 2. Scoring Criteria
+Leads are scored based on:
+- Email validity (40 points)
+- Job title seniority (20 points)
+- Email domain quality (20 points)
+- LinkedIn presence (10 points)
+- Company domain match (10 points)
 
-📞 Get in Touch
-Have questions or suggestions? Feel free to open an issue or reach out!
+### 3. Using the Dashboard
+1. **Upload Data**: Use the file uploader to import your leads
+2. **Configure Weights**: Adjust scoring weights in the sidebar
+3. **Filter Results**: Use the advanced filtering options
+4. **Analyze Insights**: Explore the analytics dashboard
+5. **Export Results**: Download processed data in preferred format
 
-👥 Contributing
-If you'd like to contribute to LeadRank, please fork the repository, create a new branch, and submit a pull request. We appreciate your contributions!
+## 📊 Sample Data
+Generate sample data for testing:
+```powershell
+python src/a.py
+```
 
-🏅 Acknowledgments
-Streamlit for making interactive apps easy to create
-Python for being awesome and easy to use
-Our amazing contributors for helping make this project better
-Enjoy using LeadRank! 🚀
+## 🤝 Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
 
+## 📝 License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## 📬 Contact
+Vilas - [@VILAS07](https://github.com/VILAS07)
+
+Project Link: [https://github.com/VILAS07/LeadRank](https://github.com/VILAS07/LeadRank)
