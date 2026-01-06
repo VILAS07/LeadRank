@@ -91,7 +91,7 @@ Leads are scored based on:
 
 ## 📊 Sample Data
 Generate sample data for testing:
-```powershel
+```powershell
 python src/a.py
 ```
 
