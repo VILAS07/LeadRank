@@ -4,7 +4,7 @@
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.24.0-FF4B4B.svg)](https://streamlit.io)
 
-## 🎯 Overv
+## 🎯 Overvie
 LeadRank is an intelligent lead scoring and analytics platform that helps sales teams prioritize their most promising leads. Using advanced algorithms and customizable criteria, it automatically scores and segments leads based on multiple factors including email validity, job seniority, and domain quality.
 
 ## ✨ Key Features
